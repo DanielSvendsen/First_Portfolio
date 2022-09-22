@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Poppins';
+    color: #fff;
+    text-align: center;
+}
+
+h3,
+h4 {
+    text-align: left;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 2;
+}
+
+div {
+    z-index: 10;
+    box-shadow:
+        1px 1px rgba(56, 184, 21, 0.939),
+        2px 2px rgba(56, 184, 21, 0.939),
+        3px 3px rgba(56, 184, 21, 0.939),
+        4px 4px rgba(56, 184, 21, 0.939),
+        5px 5px rgba(56, 184, 21, 0.939),
+        6px 6px rgba(56, 184, 21, 0.939),
+        7px 7px rgba(56, 184, 21, 0.939),
+        8px 8px rgba(56, 184, 21, 0.939);
+
+    background: rgba(206, 206, 206, 0.832);
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    left: 40px;
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 75px 25px;
+    color: #000;
+    transform: skewY(-2deg);
+    animation: animateBoxAndBtn 1s ease-in-out;
+}
+
+.boxPlus {
+    height: 450px;
+}
+
+button,
+input {
+    z-index: 10;
+    text-align: center;
+    box-shadow:
+        1px 1px rgba(56, 184, 21, 0.939),
+        2px 2px rgba(56, 184, 21, 0.939),
+        3px 3px rgba(56, 184, 21, 0.939),
+        4px 4px rgba(56, 184, 21, 0.939),
+        5px 5px rgba(56, 184, 21, 0.939),
+        6px 6px rgba(56, 184, 21, 0.939);
+    border: none;
+    background: rgba(206, 206, 206, 0.832);
+    color: #000;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    transition: 0.4s;
+    animation: animateBoxAndBtn 1s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.832);
+    box-shadow:
+        1px 1px rgba(56, 184, 21, 0.939),
+        2px 2px rgba(56, 184, 21, 0.939),
+        3px 3px rgba(56, 184, 21, 0.939),
+        4px 4px rgba(56, 184, 21, 0.939);
+    transform: scale(0.9);
+    height: 35px;
+    transition: 0.4s;
+}
+
+.NextPlanet {
+    display: block;
+    right: 42%;
+    bottom: 50px;
+    font-size: 26px;
+}
+
+.PrevPlanet {
+    display: block;
+    left: 42%;
+    bottom: 50px;
+    font-size: 26px;
+}
+
+
+.Back {
+    display: none;
+    bottom: 50px;
+}
+
+.Zoom {
+    display: none;
+    bottom: 110px;
+}
+
+.UI {
+    top: 50px;
+}
+
+.Time {
+    top: 110px;
+}
+
+@keyframes animateBoxAndBtn {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

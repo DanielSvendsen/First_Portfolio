@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Poppins';
+    color: #fff;
+    text-align: center;
+}
+
+h3, h4 {
+    text-align: left;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 2;
+}
+
+div {
+    z-index: 10;
+    box-shadow: 4px 4px rgba(56, 184, 21, 0.939);
+    background: rgba(206, 206, 206, 0.832);
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 75px 25px;
+    color: #000;
+}
+
+
+button {
+    z-index: 10;
+    box-shadow: 4px 4px rgba(56, 184, 21, 0.939);
+    border: none;
+    background: rgba(206, 206, 206, 0.832);
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.832);
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 70px;
+    transition: 0.4s;
+}
+
+.Back {
+    display: none;
+    bottom: 50px;
+}
+
+.Zoom {
+    display: none;
+    bottom: 100px;
+}
+
+/*# sourceMappingURL=main.css.map*/
